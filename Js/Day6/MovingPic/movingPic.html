@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 400px;
+            height: 400px;
+            border: 1px solid red;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        img {
+            position: absolute;
+            display: block;
+            height: 50px;
+            width: 50px;
+        }
+        #ic1 {
+            top: 175px;
+        }
+        #ic2 {
+            left: 350px;
+            top: 175px;
+        }
+        #ic3 {
+            left: 175px;
+            top: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="./icon1.gif" id="ic1">
+        <img src="./icon2.gif" id="ic2">
+        <img src="./top.jpg" id="ic3">
+    </div>
+    <button id="start">Start</button>
+    <button id="reset">Reset</button>
+    <script src="./movingPic.js"></script>
+</body>
+</html>

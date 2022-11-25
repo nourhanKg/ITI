@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./success.html">
+        <fieldset>
+            <legend>Log In</legend>
+            <label for="username">User Name</label>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="username"><br>
+            <label for="location">Select your location</label>
+            <select name="month" id="month">
+                <optgroup label="Africa">
+                    <option>Egypt</option>
+                    <option>Sudan</option>
+                    <option>Namibia</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option>France</option>
+                    <option>Russia</option>
+                    <option>UK</option>
+                </optgroup>
+                <optgroup label="North America" disabled>
+                    <option>Canada</option>
+                    <option>USA</option>
+                    <option>Mexico</option>
+                </optgroup>
+            </select><br>
+            <button id="submit">Submit</button>
+        </fieldset>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>

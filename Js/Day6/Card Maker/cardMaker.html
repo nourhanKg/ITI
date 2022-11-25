@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,h2 {
+            color: #EDA98A;
+            text-transform: capitalize;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        .center {
+            text-align: center;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card-choice {
+            display: inline-block;
+            width: 30%;
+        }
+        .card-choice img {
+            width: 100px;
+        }
+        button {
+            display: block;
+            background-color: #EDA98A;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Generate get will soon card</h1>
+        <div class="center">
+            <div class="card-choice">
+                <label for="gws">
+                    <img src="./gws.jpg">
+                </label><br>
+                <input type="radio" id="gws" value="gws" name="card">
+            </div>
+            <div class="card-choice">
+                <label for="gws2">
+                    <img src="./gws2.jpg">
+                </label><br>
+                <input type="radio" id="gws2" value="gws2" name="card">
+            </div>
+            <div class="card-choice">
+                <label for="gws3">
+                    <img src="./gws3.jpg">
+                </label><br>
+                <input type="radio" id="gws3" value="gws3" name="card">
+            </div>
+            <div class="card-choice">
+                <label for="gwsf">
+                    <img src="./gwsf.jpg">
+                </label><br>
+                <input type="radio" id="gwsf" value="gwsf" name="card">
+            </div>
+            <div class="card-choice">
+                <label for="gwsf2">
+                    <img src="./gwsf2.jpg">
+                </label><br>
+                <input type="radio" id="gwsf2" value="gwsf2" name="card">
+            </div>
+            <div class="card-choice">
+                <label for="gwsf3">
+                    <img src="./gwsf3.jpg">
+                </label><br>
+                <input type="radio" id="gwsf3" value="gwsf3" name="card">
+            </div>
+        </div>
+        <div class="center">
+            <h2>
+                persnal message
+            </h2>
+            <textarea id="message" cols="50" rows="10" placeholder="Write your message here"></textarea>
+            <button id="btn">Preview</button>
+        </div>
+    </form>
+    <script src="./cardmaker.js"></script>
+</body>
+</html>
