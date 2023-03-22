@@ -1,0 +1,47 @@
+@import "./colors";
+
+%btn {
+    background-color: black;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 15px;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.main {
+    &-title {
+        color: $primary;
+    }
+    &-subtitle {
+        color: $secondary;
+    }
+    &-btn {
+        @extend %btn;
+        color: $primary;
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
+
+$fonts: 14, 16, 18;
+@each $font in $fonts {
+    .font-#{$font}px {
+        font-size: #{$font}px;
+    }
+}
+
+.finish-btn {
+    @extend %btn;
+    color: $primary;
+    display: block;
+    @media(max-width: 992px) {
+        width: 50%;
+    }
+    @media(max-width: 500px) {
+        width: 100%;
+    }
+}
